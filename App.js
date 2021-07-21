@@ -34,11 +34,28 @@ export default function App() {
     )
   }
 
+  const renderNoMoreCards = () => {
+      return (
+          <Card>
+              <Card.Title style={{textAlign: 'left'}}>No more cards</Card.Title>
+              <Text>
+                  There is no more cards.
+              </Text>
+              <Button
+                  icon={{name: 'code'}}
+                  backgroundColor={"#03A9F4"}
+                  title={"OK"}
+              />
+          </Card>
+      )
+  }
+
   return (
     <View style={styles.container}>
       <Deck
         data={DATA}
         renderCard={renderCard}
+        renderNoMoreCards={renderNoMoreCards}
       />
     </View>
   );
