@@ -26,7 +26,6 @@ export default function App() {
                 I can customize the card further.
             </Text>
             <Button
-                icon={{name: 'code'}}
                 backgroundColor={"#03A9F4"}
                 title={"View Now"}
             />
@@ -42,7 +41,6 @@ export default function App() {
                   There is no more cards.
               </Text>
               <Button
-                  icon={{name: 'code'}}
                   backgroundColor={"#03A9F4"}
                   title={"OK"}
               />
